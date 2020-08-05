@@ -1,0 +1,16 @@
+﻿{% extends "app/home.html" %}
+
+{% block articlelist %}
+    <body>
+        {{block.super}}
+        {% if articles %}
+        <ul>
+            {% for article in articles %}
+            <li><a href="{% url 'content_view' article.id %}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p>No articles are available.</p>
+        {% endif %}
+    </body>
+{% endblock %}

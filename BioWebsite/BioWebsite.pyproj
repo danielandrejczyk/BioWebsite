@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\templates\app\home.html" />
+    <Content Include="app\templates\app\ArticleView.html" />
+    <Content Include="app\templates\app\ArticleList.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>

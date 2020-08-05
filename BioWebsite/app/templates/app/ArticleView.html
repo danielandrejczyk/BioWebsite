@@ -1,0 +1,14 @@
+﻿{% extends "app/home.html" %}
+{% block content %}
+{{block.super}}
+{% if article %}
+<h1>
+    {{article.title}}
+</h1>
+<p>
+    {{article.content}}
+</p>
+{% else %}
+<p>Article content was not found!</p>
+{% endif %}
+{% endblock %}
