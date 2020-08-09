@@ -3,11 +3,11 @@
 {{block.super}}
 {% if article %}
 <h1>
-    {{article.title}}
+    {{ article.title }}
 </h1>
-<p>
-    {{article.content}}
-</p>
+<head>
+    {{ article.content }}
+</head>
 {% else %}
 <p>Article content was not found!</p>
 {% endif %}

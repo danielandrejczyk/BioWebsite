@@ -4,9 +4,13 @@
     <body>
         {{block.super}}
         {% if articles %}
-        <ul>
             {% for article in articles %}
-            <li><a href="{% url 'content_view' article.id %}">{{ article.title }}</a></li>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <a href="{% url 'content_view' article.id %}">
+                        <button class="button" style="vertical-align:middle"><span>{{ article.title }}</span></button> 
+                    </a>
+                </div>
             {% endfor %}
         </ul>
         {% else %}

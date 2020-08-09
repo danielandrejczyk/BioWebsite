@@ -4,6 +4,7 @@
     <Name>BioWebsite</Name>
     <RootNamespace>BioWebsite</RootNamespace>
     <InterpreterId>MSBuild|BioWebEnvironment|$(MSBuildProjectFullPath)</InterpreterId>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -50,6 +51,7 @@
     <Content Include="app\templates\app\home.html" />
     <Content Include="app\templates\app\ArticleView.html" />
     <Content Include="app\templates\app\ArticleList.html" />
+    <Content Include="app\templates\app\style.css" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
