@@ -5,9 +5,9 @@
 <h1>
     {{ article.title }}
 </h1>
-<head>
-    {{ article.content }}
-</head>
+<div>
+    {{ article.content|safe }}
+</div>
 {% else %}
 <p>Article content was not found!</p>
 {% endif %}

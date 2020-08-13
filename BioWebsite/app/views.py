@@ -8,7 +8,7 @@ from .models import Article
 
 # Create your views here.
 def home(request):
-    articles = Article.objects.order_by('-publish_date')[:1]
+    articles = Article.objects.order_by('-publish_date')[:5]
     context = {'articles': articles}
     return render(request, 'app/ArticleList.html', context)
 
