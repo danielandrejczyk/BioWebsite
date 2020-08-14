@@ -48,6 +48,7 @@
     <Compile Include="BioWebsite\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BioWebsite\static\media\etaZeta.jpg" />
     <Content Include="app\templates\app\home.html" />
     <Content Include="app\templates\app\ArticleView.html" />
     <Content Include="app\templates\app\ArticleList.html" />
@@ -57,9 +58,11 @@
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
+    <Folder Include="BioWebsite\static\media\" />
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="BioWebsite\" />
+    <Folder Include="BioWebsite\static\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="BioWebEnvironment\">

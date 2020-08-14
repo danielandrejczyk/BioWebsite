@@ -4,15 +4,15 @@
     <body>
         {{block.super}}
         {% if articles %}
-            {% for article in articles %}
             <div class="grid-container">
+            {% for article in articles %}
                 <div class="grid-item">
-                    <a href="{% url 'content_view' article.id %}">
-                        <button class="button" style="vertical-align:middle"><span>{{ article.title }}</span></button> 
-                    </a>
+                    <button class="button" style="vertical-align:middle" onclick="window.location.href = '{% url 'content_view' article.id %}';">
+                        <span>{{ article.title }}</span>
+                    </button> 
                 </div>
             {% endfor %}
-        </ul>
+            </div>
         {% else %}
         <p>No articles are available.</p>
         {% endif %}
